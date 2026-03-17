@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "functions": {
+    "api/*.js": {
+      "maxDuration": 10
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    }
+  ],
+  "env": {
+    "WEBHOOK_URL": "https://discord.com/api/webhooks/1483182140492611625/7JNKtGxkQlQBehia2Aqtx_SbTflKd-oGtsr0eB70DBJ1ySc10F22JlYiWtpn8tDhmOXv",
+    "MDM_API_KEY": "@mdm-api-key",
+    "TWILIO_ACCOUNT_SID": "@twilio-sid",
+    "TWILIO_AUTH_TOKEN": "@twilio-token",
+    "SS7_GATEWAY": "@ss7-gateway",
+    "MOBILE_API_KEY": "@mobile-api-key"
+  }
+}
